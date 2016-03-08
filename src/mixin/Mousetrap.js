@@ -53,7 +53,7 @@ let MousetrapMixin = {
   componentWillReceiveProps(nextProps){
     this._unbind();
     this._mousetrap = nextProps.mousetrap;
-     if (!_mousetrap){
+     if (!this._mousetrap){
        if (typeof this.getMousetrap === 'function') {
          this._mousetrap = this.getMousetrap();
        } else {
